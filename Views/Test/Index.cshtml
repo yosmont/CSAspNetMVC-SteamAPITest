@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@using test1.Models;
+
+<script type="text/javascript" src="~/Scripts/custom/GetSteamGame.js"></script>
+
+<div>
+    <input type="text" id="SearchGameID" placeholder="ex: 1072150" />
+    <button type="button" onclick="GetSteamGame()">search game by ID</button>
+</div>
+
+<div id="SteamGameDesc">
+    <h2 id="SteamGameDesc-Name">Name</h2>
+    <p id="SteamGameDesc-ShortDesc">ShortDesc</p>
+    <p>-<span id="SteamGameDesc-Dev">Dev</span></p>
+</div>
